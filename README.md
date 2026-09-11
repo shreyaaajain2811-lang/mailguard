@@ -1,32 +1,67 @@
-# React + TypeScript + Vite
+# IRIS — Intelligent Email Threat Detection & Investigation System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+IRIS is a full-stack email security and threat investigation platform designed to help users detect, analyze, and investigate suspicious emails.
 
-Currently, two official plugins are available:
+The platform provides a security-focused dashboard for monitoring email threats, reviewing alerts, investigating suspicious messages, and analyzing potential phishing and malicious activity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Security Dashboard
+- Real-time-style security overview
+- Critical threat alerts
+- Recent email activity
+- Threat statistics and monitoring
+- Security-focused visualizations
 
-## Expanding the Oxlint configuration
+### Email Security
+- Email inbox and message inspection
+- Suspicious email detection
+- Phishing threat identification
+- Threat severity classification
+- Detailed email analysis
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### Threat Investigation
+- Case investigation workflow
+- Alert management
+- Suspicious email investigation
+- Threat indicators and analysis
+- Investigation-focused interface
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+### Reports & Settings
+- Security reports
+- Investigation data
+- Application settings
+- Theme and interface customization
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 🏗️ Project Structure
+
+```text
+mailguard/
+│
+├── frontend/                  # React + TypeScript frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   ├── data/
+│   │   ├── types/
+│   │   └── utils/
+│   ├── package.json
+│   ├── index.html
+│   ├── vite.config.ts
+│   └── ...
+│
+├── services/                  # Backend security analysis services
+│   ├── attachment_analysis.py
+│   ├── body_analysis.py
+│   ├── dns_analysis.py
+│   └── ...
+│
+├── main.py                    # Backend entry point
+├── .gitignore
+└── README.md
