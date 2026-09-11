@@ -40,7 +40,7 @@ The platform provides a security-focused dashboard for monitoring email threats,
 ## 🏗️ Project Structure
 
 ```text
-mailguard/
+IRIS/
 │
 ├── frontend/                  # React + TypeScript frontend
 │   ├── public/
